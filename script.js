@@ -22,10 +22,14 @@ $(document).ready(
                                                     setTimeout(function(){
                                                         $("#initial").hide(500, function(){
                                                             $("#initial").remove()
-                                                            $('#wish-container').show(500, function(){
+                                                            $('#wish-container').show(1000, function(){
+                                                                $('#wish-container').css('opacity', 1)
                                                                 setTimeout(function(){
                                                                     $("#id_star").show(500)
-                                                                }, 500)
+                                                                    setTimeout(function(){
+                                                                        $('#from').css('opacity', 1)
+                                                                    }, 5000)
+                                                                }, 3000)
                                                             })
                                                         })
                                                     }, 5000)

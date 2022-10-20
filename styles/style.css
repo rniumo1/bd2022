@@ -25,9 +25,11 @@ body .container {
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 5px rgba(219, 180, 180, 0.5);
           box-shadow: 5px 5px 5px rgba(219, 180, 180, 0.5);
-  background-repeat: no-repeat;
-  padding: 3rem 1rem;
-  height: 90vh;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  -webkit-transition: opacity 1000ms;
+  transition: opacity 1000ms;
+  padding: 4rem 1rem;
 }
 
 body .container .date {
@@ -59,13 +61,6 @@ body .container .date span {
   font-family: 'Silkscreen', cursive;
   font-size: 0.6rem;
   text-shadow: 0 0 5px #f0f0bd;
-}
-
-body .container .content {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 body .container .content .title {
@@ -101,6 +96,8 @@ body .container .from {
   text-align: end;
   font-family: 'Silkscreen', cursive;
   color: rgba(146, 107, 136, 0.616);
+  -webkit-transition: opacity 2000ms;
+  transition: opacity 2000ms;
 }
 
 body .container .bg {
@@ -125,5 +122,20 @@ body #initial #text {
   font-size: 2rem;
   font-family: 'Silkscreen', cursive;
   color: #966666;
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    padding: 5rem 1rem !important;
+  }
+  .container .content .title {
+    font-size: 2.4rem !important;
+  }
+  .container .content .name {
+    font-size: 3rem !important;
+  }
+  .container .content .wish {
+    font-size: 1rem !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
